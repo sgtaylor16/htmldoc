@@ -169,13 +169,13 @@
     counter-increment: subsubsection;
   }
   h4:not(.counter-skip) {
-    counter-increment: subsubsection;
-  }
-  h5:not(.counter-skip) {
     counter-increment: subsubsubsection;
   }
-  h6:not(.counter-skip) {
+  h5:not(.counter-skip) {
     counter-increment: subsubsubsubsection;
+  }
+  h6:not(.counter-skip) {
+    counter-increment: subsubsubsubsubsection;
   }
   h1.counter-reset {
     counter-reset: section;
@@ -187,13 +187,13 @@
     counter-reset: subsubsection;
   }
   h4.counter-reset {
-    counter-reset: subsubsection;
-  }
-  h5.counter-reset {
     counter-reset: subsubsubsection;
   }
-  h6.counter-reset {
+  h5.counter-reset {
     counter-reset: subsubsubsubsection;
+  }
+  h6.counter-reset {
+    counter-reset: subsubsubsubsubsection;
   }
    h1:not(.counter-skip):before {
     content: ""  counter(section, decimal) "";
@@ -205,13 +205,13 @@
     content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) "";
   }
    h4:not(.counter-skip):before {
-    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsection, decimal) "";
+    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsubsection, decimal) "";
   }
    h5:not(.counter-skip):before {
-    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsubsection, decimal) "";
+    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsubsection, decimal) '.' counter(subsubsubsubsection, decimal) "";
   }
    h6:not(.counter-skip):before {
-    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsubsection, decimal) '.' counter(subsubsubsubsection, decimal) "";
+    content: ""  counter(section, decimal) '.' counter(subsection, decimal) '.' counter(subsubsection, decimal) '.' counter(subsubsubsection, decimal) '.' counter(subsubsubsubsection, decimal) '.' counter(subsubsubsubsubsection, decimal) "";
   }
   table {
     counter-increment: table;
